@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
+import './App.css'
 import Root from './components/Root/Root';
 import Home from './components/Home/Home';
 import Jobs from './components/Jobs/Jobs';
