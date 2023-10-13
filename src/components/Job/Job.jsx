@@ -10,7 +10,7 @@ const Job = ({ job }) => {
             <div className="card-body">
                 <h2 className="text-[#474747] font-extrabold text-2xl">{job_title}</h2>
                 <p className='text-xl text-[#757575]'>{company_name}</p>
-                <div className='space-x-4 text-[#7E90FE]'>
+                <div className='space-x-4 sm:space-y-4 text-[#7E90FE]'>
                     <button className='px-5 py-2 font-extrabold border rounded border-[#7E90FE]'>{remote_or_onsite}</button>
                     <button className='px-5 py-2 font-extrabold border rounded border-[#7E90FE]'>{job_type}</button>
                 </div>
@@ -19,7 +19,7 @@ const Job = ({ job }) => {
                     <h2 className='flex mr-2 text-[#757575]'><HiOutlineCurrencyDollar className='text-xl'></HiOutlineCurrencyDollar>Salary: {salary}</h2>
                 </div>
                 <div className="card-actions mx-auto mt-6">
-                    <button className="btn btn-primary capitalize bg-gradient-to-r from-[#7E90FE] to-[#9873FF] border-none text-white text-lg">View Details</button>
+                    <button className="btn btn-primary capitalize bg-gradient-to-r from-[#7E90FE] to-[#9873FF] border-none text-white text-lg px-4 py-2">View Details</button>
                 </div>
             </div>
         </div>
