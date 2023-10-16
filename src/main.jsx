@@ -8,11 +8,11 @@ import './index.css'
 import './App.css'
 import Root from './components/Root/Root';
 import Home from './components/Home/Home';
-import Jobs from './components/Jobs/Jobs';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Statistics from './components/Statistics/Statistics';
 import Blogs from './components/Blogs/Blogs';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import JobDetails from './components/JobDetails/JobDetails';
 
 const router = createBrowserRouter([
   {
@@ -25,12 +25,13 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path: '/jobs',
-        element: <Jobs></Jobs>
-      },
-      {
         path: '/applied',
         element: <AppliedJobs></AppliedJobs>
+      },
+      {
+        path: '/job/:id',
+        element: <JobDetails></JobDetails>,
+        loader: () => fetch('../public/data/jobs.json')
       },
       {
         path: '/statistics',

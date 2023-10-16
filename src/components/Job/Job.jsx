@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import { IoLocationOutline } from 'react-icons/io5';
 import { HiOutlineCurrencyDollar } from 'react-icons/hi2';
+import { Link } from 'react-router-dom';
 
 const Job = ({ job }) => {
-    const {logo, job_title, company_name, remote_or_onsite, location, job_type, salary} = job;
+    const {id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job;
     return (
         <div className="card card-compact bg-base-100 shadow-xl">
             <figure><img className='w-28 h-10 mt-10' src={logo} alt="Shoes" /></figure>
@@ -19,7 +20,9 @@ const Job = ({ job }) => {
                     <h2 className='flex mr-2 text-[#757575]'><HiOutlineCurrencyDollar className='text-xl'></HiOutlineCurrencyDollar>Salary: {salary}</h2>
                 </div>
                 <div className="card-actions mx-auto mt-6">
-                    <button className="btn btn-primary capitalize bg-gradient-to-r from-[#7E90FE] to-[#9873FF] border-none text-white text-lg px-4 py-2">View Details</button>
+                    <Link to={`/job/${id}`}>
+                        <button className="btn btn-primary capitalize bg-gradient-to-r from-[#7E90FE] to-[#9873FF] border-none text-white text-lg px-4 py-2">View Details</button>
+                    </Link>
                 </div>
             </div>
         </div>
