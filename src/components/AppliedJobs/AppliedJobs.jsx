@@ -58,7 +58,7 @@ const AppliedJobs = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="max-w-6xl mx-auto">
         {/* Dropdown Menu */}
         <div className="flex justify-end items-center mt-32 mb-8 dropdown dropdown-end">
           <label tabIndex={0} className="btn m-1 capitalize">Filter By <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

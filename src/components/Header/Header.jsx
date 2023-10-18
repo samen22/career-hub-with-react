@@ -9,7 +9,7 @@ const Header = () => {
     <li><NavLink to='/blogs'>Blogs</NavLink></li>
   </>
   return (
-    <div className="navbar bg-gradient-to-tr from-blue-100 to-purple-50 border-none">
+    <div className="navbar bg-gradient-to-tr from-blue-100 to-purple-50 border-none p-8">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -19,7 +19,7 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <Link to={'/'}><a className="btn btn-ghost normal-case text-xl">CareerHub</a></Link>
+        <Link to={'/'}><a className="btn btn-ghost normal-case text-3xl">CareerHub</a></Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
