@@ -7,7 +7,7 @@ import Banner from '../Banner/Banner';
 const Root = () => {
   return (
     <div>
-      <div className="">
+      <div>
         <Header></Header>
         <Outlet></Outlet>
       </div>

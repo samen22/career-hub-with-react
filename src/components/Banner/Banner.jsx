@@ -1,7 +1,7 @@
 
 const Banner = () => {
   return (
-    <div className="bg-gradient-to-tr from-blue-100 to-purple-50 mb-32 p-20 w-full ">
+    <div className="bg-gradient-to-tr from-blue-100 to-purple-50 mb-32 p-20  w-full ">
       <div className="flex justify-around items-stretch space-x-7">
         <div>
           <h1 className="md:text-7xl text-5xl text-[#1A1919] font-extrabold mb-6">One Step Closer To Your <span className="text-blue-400">Dream Job</span></h1>
