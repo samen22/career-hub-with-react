@@ -25,8 +25,8 @@ const JobDetails = () => {
                     <div className="text-center">
                         <h1 className="text-2xl text-[#1A1919] font-extrabold mb-6">Job Details</h1>
                         <div>
-                            <img className="absolute top-8 -left-36 z-10" src="../../../public/assets/images/bg1.png" alt="" />
-                            <img className="absolute -top-8 -right-28 max-w-xl z-10" src="../../../public/assets/images/bg2.png" alt="" />
+                            <img className="absolute top-8 -left-36 z-10" src={'/images/bg1.png'} alt="" />
+                            <img className="absolute -top-8 -right-28 max-w-xl z-10" src={'/images/bg2.png'} alt="" />
                         </div>
                     </div>
                 </div>

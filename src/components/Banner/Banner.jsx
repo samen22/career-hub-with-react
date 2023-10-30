@@ -9,7 +9,7 @@ const Banner = () => {
           <button className="btn btn-primary capitalize bg-gradient-to-r from-[#7E90FE] to-[#9873FF] border-none text-white text-xl">Get Started</button>
         </div>
         <div className="relative top-20">
-          <img className="w-full h-full object-cover" src="../../../public/assets/images/user.png" alt="" />
+          <img className="w-full h-full object-cover" src={'/images/user.png'} alt="" />
         </div>
       </div>
     </div>
