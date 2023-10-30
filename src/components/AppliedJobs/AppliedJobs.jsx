@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { IoLocationOutline } from 'react-icons/io5';
 import { HiOutlineCurrencyDollar } from 'react-icons/hi2';
 import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet-async";
 
 const AppliedJobs = () => {
   const jobs = useLoaderData();
@@ -46,6 +47,9 @@ const AppliedJobs = () => {
   }, [jobs]);
   return (
     <div className="">
+      <Helmet>
+        <title>Career Hub | Applied Jobs</title>
+      </Helmet>
       {/* Banner */}
       <div>
         <div className="bg-gradient-to-tr from-blue-100 to-purple-50 p-20 w-full relative overflow-hidden">

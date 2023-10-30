@@ -13,13 +13,14 @@ import Statistics from './components/Statistics/Statistics';
 import Blogs from './components/Blogs/Blogs';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import JobDetails from './components/JobDetails/JobDetails';
+import { HelmetProvider } from 'react-helmet-async';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
-    children:[
+    children: [
       {
         path: '/',
         element: <Home></Home>,
@@ -27,8 +28,8 @@ const router = createBrowserRouter([
       {
         path: '/applied',
         element: <AppliedJobs></AppliedJobs>,
-        loader: () => 
-        fetch('/jobs.json') //warning: only load data you need. do not load all the data.
+        loader: () =>
+          fetch('/jobs.json') //warning: only load data you need. do not load all the data.
       },
       {
         path: '/job/:id',
@@ -49,6 +50,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <HelmetProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </HelmetProvider>
   </React.StrictMode>,
 )

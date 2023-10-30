@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveJobApplication } from "../../utility/localstorage";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -19,6 +20,9 @@ const JobDetails = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Career Hub | Job Details</title>
+            </Helmet>
             {/* Banner */}
             <div>
                 <div className="bg-gradient-to-tr from-blue-100 to-purple-50 p-20 w-full relative overflow-hidden">
